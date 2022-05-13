@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .body-create{
+    background-image: url('../PH_FILES/PH_img/wallpaper.jpg');
+    background-repeat: no-repeat;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+  .navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background: rgb(66, 66, 66);
+    color: black;
+  }
+  
+  .navbar a.active {
+    background-color: rgb(66, 66, 66);
+    color: white;
+  }
+  
+  .main {
+    padding: 16px;
+    margin-bottom: 30px;
+  }
+
+  .botons {
+    background-color: black;
+    color: white;
+  }

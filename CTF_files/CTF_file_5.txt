@@ -1,0 +1,49 @@
+DROP DATABASE IF EXISTS `eduhacks`;
+
+CREATE DATABASE IF NOT EXISTS `eduhacks`;
+
+USE `eduhacks`;
+
+CREATE TABLE `users` (
+  `iduser` int(11) NOT NULL AUTO_INCREMENT,
+  `mail` varchar(40) DEFAULT NULL,
+  `username` varchar(16) DEFAULT NULL,
+  `passHash` varchar(60) DEFAULT NULL,
+  `userFirstName` varchar(60) DEFAULT NULL,
+  `userLastName` varchar(120) DEFAULT NULL,
+  `creationDate` datetime DEFAULT NULL,
+  `activationDate` datetime DEFAULT NULL,
+  `removeDate` datetime DEFAULT NULL,
+  `lastSignIn` datetime DEFAULT NULL,
+  `activationCode` char(64) DEFAULT NULL,
+  `resetPassCode` char(64) DEFAULT NULL,
+  `active` tinyint(1) DEFAULT NULL,
+  `expireDate` date DEFAULT NULL,
+  PRIMARY KEY (`iduser`),
+  UNIQUE KEY `mail` (`mail`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE ctf (
+  idctf int(11) NOT NULL AUTO_INCREMENT,
+  titol varchar(50) DEFAULT NULL,
+  descripcio varchar(255) DEFAULT NULL,
+  dataPublicacio datetime DEFAULT NULL,
+  fitxerPath varchar(255) DEFAULT NULL,
+  categoria varchar(50) DEFAULT NULL,
+  flag varchar(255) DEFAULT NULL,
+  iduser int(11) DEFAULT NULL,
+  PRIMARY KEY (idctf),
+  KEY iduser (iduser),
+  CONSTRAINT ctf_ibfk_1 FOREIGN KEY (iduser) REFERENCES users (iduser)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `CompletarCTF` (
+   idctf INT NOT NULL,
+   iduser INT  NOT NULL,
+   AchieveDate DATE NOT NULL,
+   PRIMARY KEY (idctf),
+   FOREIGN KEY (idctf) REFERENCES ctf(idctf),
+   FOREIGN KEY (iduser) REFERENCES users(iduser)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

@@ -1,0 +1,365 @@
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.video_contain {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.body-create{
+    background-image: url('../PH_FILES/PH_img/wallpaper.jpg');
+    background-repeat: no-repeat;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.body-create{
+    background-image: url('../PH_FILES/PH_img/wallpaper.jpg');
+    background-repeat: no-repeat;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: rgb(66, 66, 66);
+  color: black;
+}
+
+.navbar a.active {
+  background-color: rgb(66, 66, 66);
+  color: white;
+}
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+}
+
+.botons {
+  background-color: black;
+  color: white;
+}
+
+
+.container{
+height: 100%;
+align-content: center;
+display: flex;
+justify-content: center;
+text-align: center;
+}
+
+.card{
+height: auto;
+margin-top: auto;
+margin-bottom: auto;
+width: 700px;
+background-color: rgb(0, 0, 0) !important;
+text-align:center;
+}
+
+.cardctf{
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 950px;
+  background-color: rgb(0, 0, 0) !important;
+  text-align:left;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.cardctf-header h3{
+  color: white;
+  }
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+width: 50px;
+height: 50px;
+margin-left: 15px;
+background-color: white;
+border-radius: 50%;
+vertical-align: middle;
+border: 1px solid #ddd;
+appearance: none;
+-webkit-appearance: none;
+outline: none;
+cursor: pointer;
+}
+
+.remember:checked {
+    background-color: #FFC312;
+}
+
+.remember input{
+    font-size: 20px;
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 200px;
+text-align:center;
+margin-top: 20px;
+margin-bottom: auto;
+padding: auto;
+border-radius: 50px;
+justify-content: center;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+.eduhackslogin {
+    font-size: 100px;
+}
+
+.placeholder {
+    height: 100px;
+    font-size: 50px;
+}
+
+.placeholder-register {
+    height: 100px;
+    width: 300px;
+    font-size: 50px;
+}
+
+.placeholder-ctf {
+  height: 100px;
+  width: 400px;
+  font-size: 50px;
+  position: center;
+}
+
+.text {
+    font-size: 40px;
+}
+
+.text-checkbox {
+    color: white;
+    font-size: 40px;
+}
+
+.label {
+  background-color: #FFC312;
+  color: rgb(5, 5, 5);
+  padding: 0.5rem;
+  width: 5px;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/*.fondo {
+  background-color: rgba(0, 0, 0, 0.514);
+   opacity: 0.2; 
+  border-radius: 20%;
+  color: white;
+  width: 1000px;
+
+}
+
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}*/
+
+.fuente {
+  color: #FFC312;
+  font-size: 45px;
+}
+
+.puntos {
+  color: #FFC312;
+  font-size: 50px;
+  float: right;
+  line-height:2em;
+}
+
+.centerbutton{
+  text-align:center;
+  display:block;
+  justify-content: center;
+}
+
+.titol {
+  color: #ffffff;
+  font-size: 80px;
+  text-align:center;
+  justify-content: center;
+  margin-bottom:0px;
+}
+
+.titol2 {
+  color: #FFC312;
+  font-size: 70px;
+  text-align:center;
+  justify-content: center;
+  margin-bottom:0px;
+}
+
+
+.fif {
+  display: inline; /* Or inline-block */
+}
+
+.lineal {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.fondo {
+  border-radius: 50px;
+  background: rgb(0, 0, 0);
+  padding: 10px;
+  width: 900px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.input {
+  padding: 10px;
+  width: 122px;
+  height: 122px;
+  background: none;
+  border: 4px solid #FFC312;
+  border-radius: 50px;
+  box-sizing: border-box;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 50px;
+  color: #FFC312;
+  outline: none;
+  transition: .5s;
+}
+.box:hover input{
+  width: 600px;
+  background: #000000;
+  border-radius: 10px;
+}
+
+i{
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translate(-50%,-50%);
+  font-size: 60px;
+  color: #FFC312;
+  transition: .2s;
+}
+.box:hover i{
+  opacity: 0;
+  z-index: -1;
+}
+.center{
+position: absolute;
+top: 15%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+
